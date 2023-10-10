@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Complete Wedding Planning",
-    "image": "https://example.com/complete_wedding_planning.jpg",
+    "image": "https://i.ibb.co/HFKCvG9/wedding-card.png",
     "price": "$5000 - $10000",
     "description": "Let us handle every aspect of your wedding, from venue selection to catering, ensuring a seamless and stress-free celebration."
   },
   {
     "id": 2,
     "name": "Day-of Coordination",
-    "image": "https://example.com/day_of_coordination.jpg",
+    "image": "https://i.ibb.co/2Z7jWys/wedding-card-2.png",
     "price": "$1500 - $3000",
     "description": "Relax and enjoy your wedding day while we manage the details, coordinate vendors, and ensure a smooth event from start to finish."
   },
   {
     "id": 3,
     "name": "Decor and Theme Design",
-    "image": "https://example.com/decor_and_theme_design.jpg",
+    "image": "https://i.ibb.co/5LmpTN1/w-card-3.png",
     "price": "$2000 - $5000",
     "description": "Create the perfect ambiance with our expert decor and theme design services, tailored to match your wedding vision and style."
   },
   {
     "id": 4,
     "name": "Venue Selection and Booking",
-    "image": "https://example.com/venue_selection_and_booking.jpg",
+    "image": "https://i.ibb.co/54VmQ3X/card-4.png",
     "price": "$1000 - $3000",
     "description": "Let us assist you in finding and booking the ideal venue for your wedding, ensuring a beautiful and memorable setting."
   },
   {
     "id": 5,
     "name": "Vendor Coordination",
-    "image": "https://example.com/vendor_coordination.jpg",
+    "image": "https://i.ibb.co/Z26fCp7/card-5.png",
     "price": "$800 - $2000",
     "description": "We'll handle all vendor communications and coordination to ensure a cohesive and well-executed wedding day."
   },
   {
     "id": 6,
     "name": "Destination Wedding Planning",
-    "image": "https://example.com/destination_wedding_planning.jpg",
+    "image": "https://i.ibb.co/gRF0r4b/card-6.png",
     "price": "Custom Quote",
     "description": "Turn your dream destination wedding into reality with our expertise in planning and organizing events in exotic locations."
   }

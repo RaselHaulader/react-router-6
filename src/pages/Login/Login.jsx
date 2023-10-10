@@ -9,15 +9,30 @@ const Login = () => {
     const { signIn, googleSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    console.log('location i n the login page', location)
-
+    const handleGoogleSignIn = () => {
+        googleSignIn().then(result => {
+            console.log(result.user);
+            // navigate after login
+            navigate(location?.state ? location.state : '/');
+        })
+            .catch(error => {
+                toast.error('Something wrong', {
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+                console.error(error);
+            })
+    }
     const handleLogin = e => {
         e.preventDefault();
-        console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
-        console.log(email, password);
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
@@ -34,7 +49,6 @@ const Login = () => {
                     progress: undefined,
                     theme: "light",
                 });
-                console.log(error);
                 console.error(error);
             })
     }
@@ -43,7 +57,7 @@ const Login = () => {
         <div>
             <Navbar></Navbar>
             <div>
-                <h2 className="text-3xl my-10 text-center">Please Login</h2>
+                <h2 className="text-4xl my-10 text-center">Please Login</h2>
                 <form onSubmit={handleLogin} className=" md:w-3/4 lg:w-1/2 mx-auto">
                     <div className="form-control">
                         <label className="label">
@@ -64,7 +78,7 @@ const Login = () => {
                         <button className="btn btn-primary">Login</button>
                     </div>
                 </form>
-                <p className="text-center mt-4">Do not have an account <Link className="text-blue-600 font-bold" to="/register">Register</Link> <button onClick={() => googleSignIn()} className="text-red-600 font-bold">Google SignIn</button></p>
+                <p className="text-center mt-4">Do not have an account <Link className="text-blue-600 font-bold" to="/register">Register</Link> <button onClick={() => handleGoogleSignIn()} className="bg-violet-600 font-bold">Google SignIn</button></p>
 
             </div>
             <ToastContainer
